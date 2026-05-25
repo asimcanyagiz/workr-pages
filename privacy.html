@@ -5,44 +5,235 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Workr — Privacy Policy</title>
   <style>
-    body{font-family:-apple-system,'Helvetica Neue',sans-serif;max-width:42em;margin:3em auto;padding:0 1.5em;color:#222;line-height:1.6}
+    body{font-family:-apple-system,'Helvetica Neue',sans-serif;max-width:46em;margin:3em auto;padding:0 1.5em;color:#222;line-height:1.65;background:#fbfaf7}
     h1{font-family:Georgia,serif;font-weight:700;font-size:2em;border-bottom:1px solid #ddd;padding-bottom:.4em}
-    h2{margin-top:2em;font-family:Georgia,serif}
+    h2{margin-top:2em;font-family:Georgia,serif;font-size:1.35em}
+    h3{margin-top:1.4em;font-family:Georgia,serif;font-size:1.08em;color:#444}
     a{color:#b8541a}
     code{background:#f4efe7;padding:.1em .3em;border-radius:3px;font-size:.9em}
+    .toc{background:#f4efe7;padding:1em 1.5em;border-radius:6px;margin:1.5em 0;font-size:.95em}
+    .toc ol{margin:.4em 0 0 1.2em;padding:0}
+    .toc li{margin:.15em 0}
+    .meta{color:#666;font-size:.92em}
+    table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.92em}
+    th,td{border:1px solid #ddd;padding:.5em .7em;text-align:left;vertical-align:top}
+    th{background:#f4efe7;font-family:Georgia,serif;font-weight:normal}
+    .callout{background:#fff;border-left:3px solid #b8541a;padding:.8em 1.1em;margin:1em 0;border-radius:0 4px 4px 0}
+    hr{border:0;border-top:1px solid #e5e0d6;margin:2.5em 0}
+    footer{margin-top:3em;color:#666;font-size:.88em;text-align:center;border-top:1px solid #e5e0d6;padding-top:1.5em}
   </style>
 </head>
 <body>
 <h1>Workr — Privacy Policy</h1>
-<p><strong>Last updated:</strong> 25 May 2026</p>
+<p class="meta"><strong>Effective date:</strong> 25 May 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> 25 May 2026 &nbsp;·&nbsp; <strong>Version:</strong> 2.0</p>
 
-<h2>Short version</h2>
-<p>Workr stores your tasks and projects locally on your device and (if you sign into iCloud) in your own private iCloud database. <strong>We do not collect, store, sell, or share any personal data on any server we control.</strong></p>
+<div class="callout">
+<strong>One-sentence summary.</strong> Workr stores your tasks and projects on your device and (optionally) in your own private iCloud or Google account; we operate no servers and collect zero personal data. If your jurisdiction grants you specific rights (GDPR, CCPA/CPRA, UK GDPR, KVKK, LGPD, PIPEDA, etc.), this policy honours them.
+</div>
 
-<h2>What we collect</h2>
-<p><strong>Nothing.</strong> Workr does not have a backend. The app does not send analytics, telemetry, or crash logs to us. There is no account to create and no login flow.</p>
+<div class="toc">
+<strong>Contents</strong>
+<ol>
+  <li><a href="#who-we-are">Who we are (Data Controller)</a></li>
+  <li><a href="#scope">Scope of this Policy</a></li>
+  <li><a href="#data-we-collect">Data we collect &mdash; and what we don't</a></li>
+  <li><a href="#device-data">Data stored on your device</a></li>
+  <li><a href="#cloud-sync">Cloud sync (Apple iCloud / Google Drive)</a></li>
+  <li><a href="#permissions">Device permissions we request</a></li>
+  <li><a href="#third-parties">Third-party services</a></li>
+  <li><a href="#website">This website (workr-pages)</a></li>
+  <li><a href="#children">Children's privacy (COPPA / GDPR Art. 8)</a></li>
+  <li><a href="#international">International data transfers</a></li>
+  <li><a href="#security">Security</a></li>
+  <li><a href="#retention">Data retention</a></li>
+  <li><a href="#your-rights">Your rights</a></li>
+  <li><a href="#gdpr">European Economic Area / United Kingdom (GDPR / UK GDPR)</a></li>
+  <li><a href="#ccpa">California residents (CCPA / CPRA)</a></li>
+  <li><a href="#kvkk">Türkiye residents (KVKK)</a></li>
+  <li><a href="#other-jurisdictions">Other jurisdictions (LGPD, PIPEDA, APP, PIPL)</a></li>
+  <li><a href="#app-store-labels">Apple App Store &amp; Google Play disclosures</a></li>
+  <li><a href="#do-not-track">Do-Not-Track &amp; Global Privacy Control</a></li>
+  <li><a href="#breach">Data breach notification</a></li>
+  <li><a href="#changes">Changes to this Policy</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ol>
+</div>
 
-<h2>What stays on your device</h2>
+<h2 id="who-we-are">1. Who we are (Data Controller)</h2>
+<p>"Workr" (the "App", "we", "our", "us") is an independently developed task-management application for iPhone, iPad, Mac and (where available) Android devices, published by:</p>
 <ul>
-  <li>The tasks, projects, priorities, and completion timestamps you create.</li>
-  <li>Standard iOS / macOS preferences set by SwiftUI / SwiftData.</li>
+  <li><strong>Developer:</strong> Asım Can Yağız (sole proprietor / indie developer)</li>
+  <li><strong>Jurisdiction:</strong> Republic of Türkiye</li>
+  <li><strong>Privacy contact:</strong> <a href="mailto:meycasim@icloud.com">meycasim@icloud.com</a></li>
+  <li><strong>App identifiers:</strong> Apple bundle ID <code>com.asimcanyagiz.Workr</code> · iCloud container <code>iCloud.com.asimcanyagiz.Workr</code></li>
+</ul>
+<p>Because Workr does not transmit personal data to any server we operate, we typically act as a <em>data processor of zero personal data</em>. For website visits (see §8) and any direct correspondence you send to us, we act as the data controller.</p>
+
+<h2 id="scope">2. Scope of this Policy</h2>
+<p>This Policy covers:</p>
+<ul>
+  <li>The Workr mobile and desktop application on iOS, iPadOS, macOS, and (where distributed) Android and ChromeOS;</li>
+  <li>Any pre-release beta versions distributed through Apple TestFlight or Google Play internal/closed/open testing tracks;</li>
+  <li>The website hosted at GitHub Pages under the <code>workr-pages</code> repository (and any future product website).</li>
+</ul>
+<p>This Policy does <strong>not</strong> cover Apple's iCloud, Google's account services, your mobile operating system, your network operator, or any other third party. Their practices are governed by their own privacy policies.</p>
+
+<h2 id="data-we-collect">3. Data we collect &mdash; and what we don't</h2>
+<p>Workr is designed to be a <strong>zero-collection</strong> product. The table below is authoritative.</p>
+<table>
+<thead><tr><th>Category</th><th>Collected by Workr?</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Contact info (name, email, phone)</td><td><strong>No</strong></td><td>No account, no sign-up flow.</td></tr>
+<tr><td>Identifiers (Apple ID, Google account, device ID, IDFA, AAID)</td><td><strong>No</strong></td><td>We do not request the IDFA / advertising identifier and do not link to any identifier.</td></tr>
+<tr><td>User content (tasks, projects, notes)</td><td><strong>Stored on device only</strong></td><td>Optionally synced via your private Apple iCloud or, on Android, your private Google Drive App Folder (when that platform support ships). Never transmitted to us.</td></tr>
+<tr><td>Usage data, analytics, telemetry</td><td><strong>No</strong></td><td>No SDKs for analytics or product instrumentation.</td></tr>
+<tr><td>Crash logs / diagnostics</td><td><strong>Only if you opt in via OS</strong></td><td>If you have enabled "Share with App Developers" in iOS/macOS Settings, Apple may share <em>anonymous</em> crash reports with us via App Store Connect. Disable any time in System Settings → Privacy &amp; Security → Analytics &amp; Improvements.</td></tr>
+<tr><td>Location data</td><td><strong>No</strong></td><td>No location permission is requested.</td></tr>
+<tr><td>Contacts / Photos / Microphone / Camera / HealthKit / Bluetooth</td><td><strong>No</strong></td><td>None of these permissions are requested or used.</td></tr>
+<tr><td>Cookies, advertising IDs, tracking pixels</td><td><strong>No</strong></td><td>The app contains no advertising and no third-party SDKs.</td></tr>
+<tr><td>Payment information</td><td><strong>No (handled by Apple / Google)</strong></td><td>If you ever purchase a subscription or in-app purchase, payment is processed entirely by Apple or Google. We never see your card details.</td></tr>
+</tbody>
+</table>
+
+<h2 id="device-data">4. Data stored on your device</h2>
+<p>Workr stores the following <strong>on your device only</strong>:</p>
+<ul>
+  <li>Task records (title, completion status, priority, due date, creation/modification timestamps);</li>
+  <li>Project records (name, colour);</li>
+  <li>User preferences (selected sidebar item, settings flags);</li>
+  <li>Standard <code>UserDefaults</code> / <code>NSUbiquitousKeyValueStore</code> values set by SwiftData / SwiftUI / the system framework you're using.</li>
+</ul>
+<p>This data is held in a SwiftData / SQLite-compatible local store inside the app's sandbox. You can erase all of it instantly by deleting the app.</p>
+
+<h2 id="cloud-sync">5. Cloud sync (Apple iCloud / Google Drive)</h2>
+
+<h3>5.1 Apple iCloud (iOS, iPadOS, macOS)</h3>
+<p>When you are signed into iCloud on your Apple device, Workr uses Apple's <strong>CloudKit</strong> framework to sync your tasks and projects across your Apple devices. The data is stored in your <em>private CloudKit database</em> inside your personal iCloud account. The CloudKit container identifier is <code>iCloud.com.asimcanyagiz.Workr</code>.</p>
+<ul>
+  <li>We — the developers — <strong>cannot read</strong> the contents of your private CloudKit database. Apple's infrastructure enforces this.</li>
+  <li>Apple may store this data on servers in the United States, the European Union, China (for accounts based in mainland China), or other regions, in accordance with Apple's own policies. See <a href="https://www.apple.com/legal/privacy/data/en/icloud/">Apple's iCloud privacy page</a> and the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</li>
+  <li>If you sign out of iCloud, disable iCloud Drive for Workr (Settings → [your name] → iCloud → Apps Using iCloud), or disable iCloud entirely, sync stops and existing data remains only on the local device.</li>
+  <li>If Apple's <strong>Advanced Data Protection</strong> is enabled on your account, CloudKit data — including Workr data — is end-to-end encrypted such that even Apple cannot read it.</li>
 </ul>
 
-<h2>What goes to iCloud (only if you're signed in)</h2>
-<p>When you are signed into iCloud on the device, Apple's CloudKit framework automatically syncs your Workr data across your Apple devices using your private iCloud database. We — the developers of Workr — do not have access to this data. Only you and Apple's infrastructure can read it. This sync uses Apple's standard encryption and authentication.</p>
-<p>If you sign out of iCloud or disable iCloud Drive for Workr, sync stops and your data stays only on the local device.</p>
+<h3>5.2 Google Drive App Folder (Android — future)</h3>
+<p>If and when an Android version of Workr is distributed via Google Play, the same zero-collection principle will apply. The likely sync mechanism on Android is the Google Drive <em>App Folder</em> (a hidden per-app folder inside the user's own Drive that the app itself can read and write but other apps cannot). This means:</p>
+<ul>
+  <li>Your task data, if synced, lives in your own Google Drive — not on our servers.</li>
+  <li>The app would request the <code>drive.appdata</code> scope (least-privilege; no access to your other Drive files).</li>
+  <li>Google may store this data on servers operated by Google LLC. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+  <li>You may disconnect the Google account at any time from within the app or from your Google Account permissions page.</li>
+</ul>
+<p>Until the Android version ships publicly, Sections 5.2 and other Android-specific references describe future intent and impose no obligations on you.</p>
 
-<h2>Third parties</h2>
-<p>None. Workr has no third-party SDKs, no advertising, no tracking, no analytics, and no third-party services of any kind.</p>
+<h2 id="permissions">6. Device permissions we request</h2>
+<p>The current iOS / iPadOS / macOS version of Workr requests <strong>no runtime permission prompts</strong>. The app declares the following <em>capability</em> only:</p>
+<ul>
+  <li><strong>iCloud (CloudKit)</strong> — used solely for cross-device sync of your own task data, as described in §5.1.</li>
+</ul>
+<p>If future versions add optional features that require permissions (for example, local notifications for due dates, or Calendar access for due-date import), the corresponding system prompt will appear at the moment you use that feature, and you may decline without losing core functionality. We will update this Policy and the platform store listings before such a feature ships.</p>
 
-<h2>Children's privacy</h2>
-<p>Workr is rated 4+ and is safe for all ages. It does not collect any data from any user, regardless of age.</p>
+<h2 id="third-parties">7. Third-party services</h2>
+<p>Workr <strong>does not</strong> embed, link to, or otherwise integrate with any third-party SDK, library, advertising network, analytics provider, A/B-testing platform, crash reporter we operate, or social-login provider. The only external services involved are the platform services provided by Apple and (on Android, when applicable) Google, plus your operating system itself.</p>
+<p>For website visits, see §8.</p>
 
-<h2>Changes to this policy</h2>
-<p>If we ever change this policy in a meaningful way, the change will be reflected in the "Last updated" date above and (for material changes) noted in the next App Store release notes.</p>
+<h2 id="website">8. This website (workr-pages)</h2>
+<p>The pages at the GitHub Pages site associated with the <code>workr-pages</code> repository are static HTML. We do not set any first-party cookies, run any analytics, or load any third-party scripts.</p>
+<p>However, when you visit the site, <strong>GitHub Inc.</strong> (as the hosting provider) automatically processes standard server log information (IP address, user-agent, requested URL, timestamp) for security, abuse prevention, and operational purposes. GitHub's practices are governed by the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a> and the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a>. We do not receive these logs.</p>
 
-<h2>Contact</h2>
-<p>Questions? Email <a href="mailto:meycasim@icloud.com">meycasim@icloud.com</a>.</p>
+<h2 id="children">9. Children's privacy (COPPA / GDPR Art. 8)</h2>
+<p>Workr is rated 4+ on the App Store and is suitable for all ages, including children. Because Workr collects no personal data from any user, no special children's data is collected either. We do not knowingly collect personal data from children under the age of 13 (United States) / 16 (European Economic Area, depending on the Member State) / the equivalent local age threshold. If you are a parent or guardian and believe your child has somehow provided us with personal data (for example by emailing us), please contact <a href="mailto:meycasim@icloud.com">meycasim@icloud.com</a> and we will delete it immediately.</p>
+
+<h2 id="international">10. International data transfers</h2>
+<p>Because we collect no personal data ourselves, no international transfer is performed by us. The cloud sync providers (Apple, optionally Google) may transfer your own data internationally in line with their own policies. Apple relies on the EU Standard Contractual Clauses for EU-to-US transfers; Google relies on the EU-US Data Privacy Framework and SCCs. We are not a party to those transfers.</p>
+
+<h2 id="security">11. Security</h2>
+<ul>
+  <li>Local storage uses your operating system's standard file-system protections (App Sandbox / Data Protection class) and the encryption that your device's lock screen provides.</li>
+  <li>Sync uses TLS in transit and the platform-provided encryption at rest (CloudKit / Google Drive).</li>
+  <li>No service accounts or developer credentials grant us access to your private cloud database.</li>
+  <li>If you lose your device, you should remotely lock or erase it via Find My / Find Hub — this is the most effective protection for your data.</li>
+</ul>
+<p>No system is perfectly secure. By using Workr, you acknowledge that no method of electronic storage or transmission is 100% secure, and we cannot guarantee absolute security.</p>
+
+<h2 id="retention">12. Data retention</h2>
+<ul>
+  <li><strong>On your device:</strong> until you delete the task / project / app.</li>
+  <li><strong>In your private iCloud / Drive:</strong> until you delete the task / project, delete the app from all your devices, or terminate the cloud account. Apple and Google may retain backups according to their own retention windows.</li>
+  <li><strong>On our servers:</strong> not applicable — we operate none.</li>
+  <li><strong>Email correspondence:</strong> if you email us, we retain that thread for as long as needed to handle your request and for up to 24 months thereafter for support continuity, unless you ask us to delete it sooner.</li>
+</ul>
+
+<h2 id="your-rights">13. Your rights</h2>
+<p>You have the following rights with respect to any personal data you provide to us by emailing us, or that may exist about you in our records (which is typically nothing more than the email thread itself):</p>
+<ul>
+  <li><strong>Access</strong> — request a copy of any personal data we hold about you.</li>
+  <li><strong>Rectification</strong> — ask us to correct inaccurate data.</li>
+  <li><strong>Erasure</strong> ("right to be forgotten") — ask us to delete data.</li>
+  <li><strong>Restriction</strong> — ask us to stop processing your data in certain ways.</li>
+  <li><strong>Portability</strong> — receive your data in a structured, machine-readable format.</li>
+  <li><strong>Objection</strong> — object to processing based on legitimate interests.</li>
+  <li><strong>Withdraw consent</strong> — where processing is based on consent.</li>
+  <li><strong>Lodge a complaint</strong> — with your local data protection authority (see §14 / §16).</li>
+  <li><strong>Non-discrimination</strong> — we will not deny service for exercising any right.</li>
+</ul>
+<p>To exercise any right, email <a href="mailto:meycasim@icloud.com">meycasim@icloud.com</a> from the address you originally used. We respond within 30 days, extendable by a further 60 days for complex requests as permitted by GDPR Art. 12(3).</p>
+
+<h2 id="gdpr">14. European Economic Area &amp; United Kingdom (GDPR / UK GDPR)</h2>
+<p>If you are in the EEA, the United Kingdom, or Switzerland, the following applies.</p>
+<ul>
+  <li><strong>Legal basis for processing</strong>: as we collect no personal data through the app, no Art. 6 legal basis is needed for app use. Where we do process data (email correspondence, optional crash diagnostics shared by Apple/Google), our legal basis is your <em>consent</em> (Art. 6(1)(a)) and / or our <em>legitimate interest</em> in providing customer support and improving stability (Art. 6(1)(f)).</li>
+  <li><strong>Automated decision-making</strong>: none. No profiling. No Art. 22 decisions.</li>
+  <li><strong>Supervisory authority</strong>: you may lodge a complaint with the data protection authority of your habitual residence, place of work, or place of the alleged infringement. A directory is available at <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en">edpb.europa.eu</a>.</li>
+  <li><strong>EU representative</strong>: as a non-EU-established controller that does not regularly process data of EU subjects on a large scale, we are not required to appoint an EU representative under GDPR Art. 27. We will appoint one if our processing becomes regular and material.</li>
+</ul>
+
+<h2 id="ccpa">15. California residents (CCPA / CPRA)</h2>
+<p>If you are a California resident, the California Consumer Privacy Act (as amended by CPRA) gives you specific rights. In the 12 months preceding the effective date of this Policy:</p>
+<ul>
+  <li>We have <strong>not collected</strong> personal information through the App, beyond what is described in §3.</li>
+  <li>We have <strong>not sold</strong> any personal information.</li>
+  <li>We have <strong>not shared</strong> personal information for cross-context behavioural advertising.</li>
+  <li>We have <strong>not used or disclosed</strong> sensitive personal information for inferring characteristics about a consumer.</li>
+</ul>
+<p>You have the right to <em>know</em>, <em>delete</em>, <em>correct</em>, and <em>limit the use of</em> any personal information, and the right to <em>non-discrimination</em> for exercising these rights. Authorised agents may submit requests on your behalf with appropriate proof. Contact <a href="mailto:meycasim@icloud.com">meycasim@icloud.com</a>.</p>
+
+<h2 id="kvkk">16. Türkiye residents (KVKK)</h2>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu sıfatıyla yukarıda belirtilen geliştirici görev yapmaktadır. Workr uygulaması, KVKK madde 3 anlamında bir kişisel veri işleme faaliyeti yürütmemektedir; yalnızca cihazınızda yerel olarak veri saklanmakta ve seçtiğiniz takdirde Apple iCloud veya Google Drive üzerinden senkronize edilmektedir.</p>
+<p>KVKK madde 11 uyarınca, <strong>kişisel verilerinizin işlenip işlenmediğini öğrenme</strong>, <strong>işlenmişse buna ilişkin bilgi talep etme</strong>, <strong>amacına uygun kullanılıp kullanılmadığını öğrenme</strong>, <strong>yurt içi / yurt dışı aktarımlardan haberdar olma</strong>, <strong>düzeltilmesini isteme</strong>, <strong>silinmesini / yok edilmesini isteme</strong>, <strong>aktarıldığı üçüncü kişilere bildirilmesini isteme</strong>, <strong>otomatik sistemlerle analiz edilmesine itiraz etme</strong> ve <strong>kanuna aykırı işleme nedeniyle uğradığınız zararın giderilmesini talep etme</strong> haklarına sahipsiniz. Başvurularınızı <a href="mailto:meycasim@icloud.com">meycasim@icloud.com</a> adresine iletebilirsiniz. KVK Kuruluna şikâyet hakkınız saklıdır.</p>
+
+<h2 id="other-jurisdictions">17. Other jurisdictions (LGPD, PIPEDA, APP, PIPL, etc.)</h2>
+<p>If you reside in Brazil (LGPD), Canada (PIPEDA), Australia (Australian Privacy Principles), India (DPDP Act), Japan (APPI), South Korea (PIPA), South Africa (POPIA), or mainland China (PIPL), this Policy is intended to satisfy the substantive transparency and data-subject-rights requirements of your local regime. Where local law affords you a stronger right than this Policy describes, that local right prevails. Contact us to exercise it.</p>
+
+<h2 id="app-store-labels">18. Apple App Store &amp; Google Play disclosures</h2>
+
+<h3>18.1 Apple App Store — "Privacy Nutrition Labels"</h3>
+<p>Workr's App Store privacy label is "<strong>Data Not Collected</strong>" across every category. This corresponds to no collection of contact info, identifiers, user content (we count user content as "not collected by us" because it never leaves the user's own iCloud), usage data, diagnostics linked to the user, location, financial info, health, fitness, sensitive info, or any other category Apple lists. If this changes, we will update the label and this Policy before the affected build is reviewed.</p>
+
+<h3>18.2 Google Play — "Data Safety" section</h3>
+<p>When Workr is distributed on Google Play, the Data Safety section will declare: <strong>no data collected</strong>, <strong>no data shared with third parties</strong>, <strong>data encrypted in transit</strong>, and (subject to platform support) <strong>users can request data deletion</strong> by deleting the app or contacting us. We will update the disclosure if any of these change.</p>
+
+<h2 id="do-not-track">19. Do-Not-Track &amp; Global Privacy Control</h2>
+<p>Workr does not track you across apps or websites, so DNT and GPC signals have no impact on the app. This website (§8) does not deploy tracking, so DNT / GPC signals received here also produce no behavioural change — there is no tracking to suppress.</p>
+
+<h2 id="breach">20. Data breach notification</h2>
+<p>In the unlikely event of a personal data breach affecting any data we hold about you (typically: an unauthorised disclosure of an email thread you sent us), we will notify the relevant supervisory authority within 72 hours where required by GDPR Art. 33, and we will notify you without undue delay where required by Art. 34, by the equivalent CCPA / CPRA provisions, by KVKK madde 12/5, or by any other applicable law.</p>
+
+<h2 id="changes">21. Changes to this Policy</h2>
+<p>We may update this Policy from time to time. The "Last updated" and "Version" fields above will always reflect the current revision. <strong>Material changes</strong> (any change that broadens our data collection, narrows your rights, or changes the legal basis for processing) will be highlighted at the top of this document for at least 30 days and noted in the next App Store / Google Play release notes. Continued use of Workr after a material change becomes effective constitutes acceptance of the revised Policy.</p>
+<p>A change log of all previous versions is maintained in the git history of the <code>workr-pages</code> public repository.</p>
+
+<h2 id="contact">22. Contact</h2>
+<p>Privacy questions, data subject requests, supervisory-authority enquiries, or general feedback:</p>
+<ul>
+  <li>Email: <a href="mailto:meycasim@icloud.com">meycasim@icloud.com</a></li>
+  <li>Subject line guidance: please include "<em>Privacy</em>", "<em>GDPR</em>", "<em>CCPA</em>", "<em>KVKK</em>", or your jurisdiction to help us route your request quickly.</li>
+</ul>
+
+<hr>
+<footer>
+&copy; 2026 Asım Can Yağız · <a href="index.html">Home</a> · <a href="terms.html">Terms of Service</a> · <a href="support.html">Support</a>
+</footer>
 
 </body>
 </html>
