@@ -25,10 +25,14 @@
 </head>
 <body>
 <h1>Workr — Privacy Policy</h1>
-<p class="meta"><strong>Effective date:</strong> 25 May 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> 25 May 2026 &nbsp;·&nbsp; <strong>Version:</strong> 2.0</p>
+<p class="meta"><strong>Effective date:</strong> 29 June 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> 29 June 2026 &nbsp;·&nbsp; <strong>Version:</strong> 2.1</p>
 
 <div class="callout">
-<strong>One-sentence summary.</strong> Workr stores your tasks and projects on your device and (optionally) in your own private iCloud or Google account; we operate no servers and collect zero personal data. If your jurisdiction grants you specific rights (GDPR, CCPA/CPRA, UK GDPR, KVKK, LGPD, PIPEDA, etc.), this policy honours them.
+<strong>What changed in v2.1 (material update).</strong> Workr now offers an optional <strong>Workr Premium</strong> subscription (managed by RevenueCat) and optional <strong>cloud AI</strong> features (processed by OpenAI via the AIProxy gateway, only when you explicitly trigger them). This update discloses both. The app's core task management and iCloud sync remain zero-collection. See §3 and §7.
+</div>
+
+<div class="callout">
+<strong>One-sentence summary.</strong> Workr stores your tasks and projects on your device and (optionally) in your own private iCloud account. The app's core collects no personal data and we run no servers that hold your task data. Two optional features rely on third parties: Workr Premium subscriptions are managed by RevenueCat, and cloud AI — which runs only when you explicitly trigger it — sends the specific task text you choose to process to OpenAI (see §3 and §7). If your jurisdiction grants you specific rights (GDPR, CCPA/CPRA, UK GDPR, KVKK, LGPD, PIPEDA, etc.), this policy honours them.
 </div>
 
 <div class="toc">
@@ -79,7 +83,7 @@
 <p>This Policy does <strong>not</strong> cover Apple's iCloud, Google's account services, your mobile operating system, your network operator, or any other third party. Their practices are governed by their own privacy policies.</p>
 
 <h2 id="data-we-collect">3. Data we collect &mdash; and what we don't</h2>
-<p>Workr is designed to be a <strong>zero-collection</strong> product. The table below is authoritative.</p>
+<p>Workr is designed to collect as little as possible. Its core — task management and iCloud sync — is <strong>zero-collection</strong>. Two optional features involve third parties (subscriptions via RevenueCat; cloud AI via OpenAI) and are called out below and in §7. The table is authoritative.</p>
 <table>
 <thead><tr><th>Category</th><th>Collected by Workr?</th><th>Notes</th></tr></thead>
 <tbody>
@@ -90,8 +94,10 @@
 <tr><td>Crash logs / diagnostics</td><td><strong>Only if you opt in via OS</strong></td><td>If you have enabled "Share with App Developers" in iOS/macOS Settings, Apple may share <em>anonymous</em> crash reports with us via App Store Connect. Disable any time in System Settings → Privacy &amp; Security → Analytics &amp; Improvements.</td></tr>
 <tr><td>Location data</td><td><strong>No</strong></td><td>No location permission is requested.</td></tr>
 <tr><td>Contacts / Photos / Microphone / Camera / HealthKit / Bluetooth</td><td><strong>No</strong></td><td>None of these permissions are requested or used.</td></tr>
-<tr><td>Cookies, advertising IDs, tracking pixels</td><td><strong>No</strong></td><td>The app contains no advertising and no third-party SDKs.</td></tr>
-<tr><td>Payment information</td><td><strong>No (handled by Apple / Google)</strong></td><td>If you ever purchase a subscription or in-app purchase, payment is processed entirely by Apple or Google. We never see your card details.</td></tr>
+<tr><td>Cookies, advertising IDs, tracking pixels</td><td><strong>No</strong></td><td>The app contains no advertising and no analytics/tracking SDKs. It does embed the RevenueCat (subscriptions) and AIProxy (cloud-AI gateway) SDKs — see §7. Neither is used to track you across apps or websites.</td></tr>
+<tr><td>Payment information</td><td><strong>No (handled by Apple)</strong></td><td>If you purchase a Workr Premium subscription, payment is processed entirely by Apple. We never see your card details. Subscription <em>entitlement</em> (active / not active) is managed by RevenueCat using your App Store receipt and an anonymous app-user ID — see §7.</td></tr>
+<tr><td>Purchase / subscription data</td><td><strong>Yes — via RevenueCat (only if you use Premium)</strong></td><td>If you start, restore, or hold a Workr Premium subscription, RevenueCat processes your App Store transaction/receipt and an anonymous app-user ID to determine whether your subscription is active. No name, email, or card details. Used solely for app functionality (unlocking cloud AI), not for tracking. See §7.</td></tr>
+<tr><td>Cloud-AI content</td><td><strong>Only when you explicitly trigger it</strong></td><td>When you tap a cloud-AI action (e.g. "improve title") as a Premium subscriber, the specific text you chose (a task title or selected list) is sent to OpenAI via the AIProxy gateway to generate the suggestion, then returned. We never send your full task database — only the item(s) you act on. On-device Apple Intelligence does not leave your device. See §7.</td></tr>
 </tbody>
 </table>
 
@@ -134,7 +140,12 @@
 <p>If future versions add optional features that require permissions (for example, local notifications for due dates, or Calendar access for due-date import), the corresponding system prompt will appear at the moment you use that feature, and you may decline without losing core functionality. We will update this Policy and the platform store listings before such a feature ships.</p>
 
 <h2 id="third-parties">7. Third-party services</h2>
-<p>Workr <strong>does not</strong> embed, link to, or otherwise integrate with any third-party SDK, library, advertising network, analytics provider, A/B-testing platform, crash reporter we operate, or social-login provider. The only external services involved are the platform services provided by Apple and (on Android, when applicable) Google, plus your operating system itself.</p>
+<p>Workr contains <strong>no</strong> advertising, analytics, A/B-testing, social-login, or crash-reporting SDKs that we operate. It integrates <strong>two</strong> third-party services, each for a single, user-facing purpose:</p>
+<ul>
+  <li><strong>RevenueCat</strong> (RevenueCat, Inc.) — manages the optional <em>Workr Premium</em> subscription (purchase, entitlement, and Restore Purchases). When you interact with Premium, RevenueCat receives your App Store transaction / receipt and an anonymous, app-generated user ID in order to determine whether your subscription is active. It does <strong>not</strong> receive your name, email address, or payment-card details — those remain with Apple. RevenueCat performs server-side receipt validation. Its practices are governed by the <a href="https://www.revenuecat.com/privacy/">RevenueCat Privacy Policy</a>.</li>
+  <li><strong>OpenAI</strong> (OpenAI, L.L.C.), accessed through the <strong>AIProxy</strong> gateway — powers Workr's optional <em>cloud AI</em> features (for example, cleaning up a task title or suggesting how to group tasks). These run <strong>only</strong> when you explicitly trigger a cloud-AI action and you are a Premium subscriber. At that moment, the specific text you chose to process — a task title or a selected list of titles — is sent through AIProxy to OpenAI, the suggestion is returned, and you decide whether to apply it. We do <strong>not</strong> send your full task database; only the item(s) you act on are transmitted. OpenAI does not use data submitted through its API to train its models. AIProxy acts as a privacy-preserving relay (it forwards the request without exposing our service key and applies rate limits) and is not used to profile you. See the <a href="https://openai.com/policies/privacy-policy/">OpenAI Privacy Policy</a> and the <a href="https://www.aiproxy.com/privacy">AIProxy Privacy Policy</a>.</li>
+</ul>
+<p>On-device <strong>Apple Intelligence</strong> features (on supported devices) run entirely on your device and send nothing to us or any third party. The remaining external services are the platform services provided by Apple (and, on Android when applicable, Google) plus your operating system itself.</p>
 <p>For website visits, see §8.</p>
 
 <h2 id="website">8. This website (workr-pages)</h2>
@@ -208,7 +219,12 @@
 <h2 id="app-store-labels">18. Apple App Store &amp; Google Play disclosures</h2>
 
 <h3>18.1 Apple App Store — "Privacy Nutrition Labels"</h3>
-<p>Workr's App Store privacy label is "<strong>Data Not Collected</strong>" across every category. This corresponds to no collection of contact info, identifiers, user content (we count user content as "not collected by us" because it never leaves the user's own iCloud), usage data, diagnostics linked to the user, location, financial info, health, fitness, sensitive info, or any other category Apple lists. If this changes, we will update the label and this Policy before the affected build is reviewed.</p>
+<p>Workr's App Store privacy label reflects the limited data the optional features involve, and nothing more:</p>
+<ul>
+  <li><strong>Purchases</strong> — subscription status, linked to an anonymous app-user ID, processed by RevenueCat for <em>App Functionality</em> (unlocking cloud AI). Not used for tracking.</li>
+  <li><strong>User Content</strong> — for users who use cloud AI only: the task text you choose to process is sent to OpenAI to deliver the feature you requested (<em>App Functionality</em>). Not linked to your identity and not used for tracking.</li>
+</ul>
+<p>All core task data remains "<strong>Data Not Collected</strong>" — it never leaves your own iCloud. No data is used to track you across other companies' apps or websites. If any of this changes, we will update the label and this Policy before the affected build is reviewed.</p>
 
 <h3>18.2 Google Play — "Data Safety" section</h3>
 <p>When Workr is distributed on Google Play, the Data Safety section will declare: <strong>no data collected</strong>, <strong>no data shared with third parties</strong>, <strong>data encrypted in transit</strong>, and (subject to platform support) <strong>users can request data deletion</strong> by deleting the app or contacting us. We will update the disclosure if any of these change.</p>
