@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workr — Connect your Claude</title>
+  <style>
+    body{font-family:-apple-system,'Helvetica Neue',sans-serif;max-width:46em;margin:3em auto;padding:0 1.5em;color:#222;line-height:1.65;background:#fbfaf7}
+    h1{font-family:Georgia,serif;font-weight:700;font-size:2em;border-bottom:1px solid #ddd;padding-bottom:.4em}
+    h2{margin-top:2em;font-family:Georgia,serif;font-size:1.35em}
+    h3{margin-top:1.4em;font-family:Georgia,serif;font-size:1.08em;color:#444}
+    a{color:#b8541a}
+    code{background:#f4efe7;padding:.1em .3em;border-radius:3px;font-size:.9em}
+    .lead{color:#444;font-size:1.08em}
+    .meta{color:#666;font-size:.92em}
+    table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.92em}
+    th,td{border:1px solid #ddd;padding:.5em .7em;text-align:left;vertical-align:top}
+    th{background:#f4efe7;font-family:Georgia,serif;font-weight:normal}
+    .callout{background:#fff;border-left:3px solid #b8541a;padding:.8em 1.1em;margin:1em 0;border-radius:0 4px 4px 0}
+    .steps{padding-left:0;list-style:none;counter-reset:step}
+    .steps>li{position:relative;margin:1.1em 0;padding-left:2.4em}
+    .steps>li::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:1.6em;height:1.6em;line-height:1.6em;text-align:center;background:#b8541a;color:#fff;border-radius:50%;font-family:Georgia,serif;font-size:.95em}
+    .linkbox{background:#f4efe7;border:1px solid #e5e0d6;border-radius:6px;padding:.9em 1.1em;margin:1.2em 0;font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:1.02em;word-break:break-all;user-select:all}
+    hr{border:0;border-top:1px solid #e5e0d6;margin:2.5em 0}
+    footer{margin-top:3em;color:#666;font-size:.88em;text-align:center;border-top:1px solid #e5e0d6;padding-top:1.5em}
+  </style>
+</head>
+<body>
+<h1>Connect your Claude</h1>
+<p class="lead">Let your own Anthropic Claude read and edit your Workr tasks — straight from Claude on your computer. Ask Claude to add a task, tick one off, tidy up a project, and it shows up in Workr.</p>
+
+<div class="callout">
+<strong>Opt-in, off by default, your data stays yours.</strong> Nothing is shared until you switch this on inside the Workr app and tap through a consent screen. You can disconnect at any time, and your tasks on your device and in iCloud are never touched.
+</div>
+
+<h2 id="setup">How to set it up</h2>
+<p>Two steps — one in the Workr app, one in Claude. You sign in with the same Apple ID on both sides so they connect to each other.</p>
+
+<ol class="steps">
+  <li><strong>In the Workr app:</strong> open <strong>Settings → Connect your Claude</strong>, read the consent screen, and sign in. This puts a private mirror of your tasks in the cloud so Claude has something to read and write. (It is created only when you do this, and removed when you disconnect.)</li>
+  <li><strong>In Claude</strong> (claude.ai or the Claude app, on your computer): go to <strong>Settings → Connectors → "Add custom connector"</strong>, paste the connector link below, and sign in with the <strong>same Apple ID</strong> you used in the Workr app.</li>
+</ol>
+
+<h3>The connector link</h3>
+<p>Paste this into Claude's "Add custom connector" box:</p>
+<div class="linkbox">https://workr-mcp-ndatydn3ma-ew.a.run.app/mcp</div>
+
+<h2 id="commands">What you can ask Claude to do</h2>
+<p>Once connected, just talk to Claude in plain language. Here is everything it can do today, with an example of what to say:</p>
+
+<table>
+<thead><tr><th>What it does</th><th>Example prompt</th></tr></thead>
+<tbody>
+<tr><td><strong>List tasks</strong><br>See your tasks — open (default), done, or all, and optionally just one project.</td><td>"List my open Workr tasks"</td></tr>
+<tr><td><strong>List projects</strong><br>See the projects you've created.</td><td>"What projects do I have in Workr?"</td></tr>
+<tr><td><strong>Add a task</strong><br>Create a task, optionally with a priority (low / medium / high) and assigned to an existing project.</td><td>"Add 'Buy milk' to Workr, high priority"</td></tr>
+<tr><td><strong>Complete / reopen a task</strong><br>Tick a task off, or bring it back to your open list.</td><td>"Mark 'Buy milk' as done in Workr"</td></tr>
+<tr><td><strong>Update a task</strong><br>Change a task's title, priority, project, or pin it.</td><td>"Rename my 'Buy milk' task to 'Buy oat milk'"</td></tr>
+<tr><td><strong>Delete a task</strong><br>Remove a task. It's a soft delete — recoverable on your device.</td><td>"Delete the 'Buy milk' task in Workr"</td></tr>
+<tr><td><strong>Add a project</strong><br>Create a new project to organise tasks into.</td><td>"Create a 'Groceries' project in Workr"</td></tr>
+</tbody>
+</table>
+
+<div class="callout">
+<strong>Changes apply on your next device sync.</strong> When you ask Claude to add, change, or remove something, Claude queues the change — the Workr app applies it the next time it syncs, so it isn't instant. Reading your tasks is always live.
+</div>
+
+<p class="meta">This list of commands grows as Workr grows — new things you can ask Claude to do will appear here.</p>
+
+<h2 id="privacy">Privacy &amp; control</h2>
+<ul>
+  <li><strong>Off by default.</strong> The feature does nothing until you explicitly turn it on in the Workr app.</li>
+  <li><strong>Explicit consent.</strong> Before anything is shared, a consent screen names exactly who is involved: <strong>Anthropic</strong> (your Claude, the recipient), <strong>Google Firebase</strong> (stores your private task mirror), and <strong>WorkOS</strong> (handles the sign-in).</li>
+  <li><strong>Only your tasks, never your photos.</strong> The mirror contains task titles, notes, projects, priority, and completion state. Photos attached to tasks are never shared.</li>
+  <li><strong>Disconnect</strong> stops sharing and deletes the cloud copy.</li>
+  <li><strong>Delete Connected Account</strong> removes the mirror and your sign-in identity entirely.</li>
+  <li><strong>Your real data is never affected.</strong> Your tasks on your device and in your private iCloud stay exactly as they are, whatever you do here.</li>
+</ul>
+<p>For the full detail on the third parties involved and what is shared, see <a href="privacy.html#third-parties">Privacy Policy §7 (Third-party services)</a>.</p>
+
+<hr>
+<footer>
+&copy; 2026 Asım Can Yağız · <a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="support.html">Support</a>
+</footer>
+
+</body>
+</html>
