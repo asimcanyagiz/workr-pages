@@ -48,16 +48,42 @@
 <h2 id="commands">What you can ask Claude to do</h2>
 <p>Once connected, just talk to Claude in plain language. Here is everything it can do today, with an example of what to say:</p>
 
+<h3>Tasks</h3>
 <table>
 <thead><tr><th>What it does</th><th>Example prompt</th></tr></thead>
 <tbody>
-<tr><td><strong>List tasks</strong><br>See your tasks — open (default), done, or all, and optionally just one project.</td><td>"List my open Workr tasks"</td></tr>
-<tr><td><strong>List projects</strong><br>See the projects you've created.</td><td>"What projects do I have in Workr?"</td></tr>
-<tr><td><strong>Add a task</strong><br>Create a task, optionally with a priority (low / medium / high) and assigned to an existing project.</td><td>"Add 'Buy milk' to Workr, high priority"</td></tr>
+<tr><td><strong>List tasks</strong><br>See your tasks — open (default), done, all, or what's in your Trash. Can search by title, or narrow to one project.</td><td>"List my open Workr tasks" &middot; "What's in my Workr trash?"</td></tr>
+<tr><td><strong>Add a task</strong><br>Create a task with a priority, project, due date, repeat schedule, reminder, notes, and mark it as "Doing" — any or all at once.</td><td>"Add 'Buy milk' to Workr, due tomorrow, high priority"</td></tr>
+<tr><td><strong>Update a task</strong><br>Change anything about an existing task — title, notes, priority, project, due date, repeat, reminder, or pin it as "Doing."</td><td>"Move my 'Buy milk' task to Groceries and repeat it weekly"</td></tr>
 <tr><td><strong>Complete / reopen a task</strong><br>Tick a task off, or bring it back to your open list.</td><td>"Mark 'Buy milk' as done in Workr"</td></tr>
-<tr><td><strong>Update a task</strong><br>Change a task's title, priority, project, or pin it.</td><td>"Rename my 'Buy milk' task to 'Buy oat milk'"</td></tr>
-<tr><td><strong>Delete a task</strong><br>Remove a task. It's a soft delete — recoverable on your device.</td><td>"Delete the 'Buy milk' task in Workr"</td></tr>
-<tr><td><strong>Add a project</strong><br>Create a new project to organise tasks into.</td><td>"Create a 'Groceries' project in Workr"</td></tr>
+<tr><td><strong>Reorder a task</strong><br>Move a task above or below another one in your list — just like dragging it by hand.</td><td>"Put 'Call the bank' at the top of my list"</td></tr>
+<tr><td><strong>Delete a task</strong><br>Remove a task. It's a soft delete — it goes to Trash and is recoverable.</td><td>"Delete the 'Buy milk' task in Workr"</td></tr>
+<tr><td><strong>Restore a deleted task</strong><br>Bring a task back out of Trash.</td><td>"Actually, bring back that 'Buy milk' task I deleted"</td></tr>
+<tr><td><strong>Permanently delete a task</strong><br>Empty a task out of Trash for good — no undo. (The task must already be in Trash.)</td><td>"Permanently delete that old test task"</td></tr>
+</tbody>
+</table>
+
+<h3>Projects</h3>
+<table>
+<thead><tr><th>What it does</th><th>Example prompt</th></tr></thead>
+<tbody>
+<tr><td><strong>List projects</strong><br>See the projects you've created.</td><td>"What projects do I have in Workr?"</td></tr>
+<tr><td><strong>Add a project</strong><br>Create a new project to organise tasks into, optionally with a colour.</td><td>"Create a 'Groceries' project in Workr, make it green"</td></tr>
+<tr><td><strong>Rename or recolour a project</strong></td><td>"Rename my Work project to Career"</td></tr>
+<tr><td><strong>Delete a project</strong><br>Its tasks aren't deleted — they move to Inbox. This can't be undone.</td><td>"Delete the Groceries project"</td></tr>
+</tbody>
+</table>
+
+<h3>Templates — reusable multi-step plans</h3>
+<p>A template is an ordered checklist (e.g. "Onboard a new client") that Claude can build once and reuse. Starting a template creates a project and drops the first step in as a task; finishing each step reveals the next.</p>
+<table>
+<thead><tr><th>What it does</th><th>Example prompt</th></tr></thead>
+<tbody>
+<tr><td><strong>List templates</strong></td><td>"What Workr templates do I have?"</td></tr>
+<tr><td><strong>Add a template</strong><br>Give it a name and an ordered list of steps, each with its own timing.</td><td>"Make a Workr template called 'New Client' — welcome email, kickoff call in a week, follow-up in a month"</td></tr>
+<tr><td><strong>Update a template</strong><br>Rename it or change its steps.</td><td>"Add a step to my New Client template"</td></tr>
+<tr><td><strong>Start a template</strong><br>Creates a project and puts the first step on your list.</td><td>"Start my New Client template"</td></tr>
+<tr><td><strong>Delete a template</strong><br>Templates already started aren't affected.</td><td>"Delete my New Client template"</td></tr>
 </tbody>
 </table>
 
@@ -71,7 +97,7 @@
 <ul>
   <li><strong>Off by default.</strong> The feature does nothing until you explicitly turn it on in the Workr app.</li>
   <li><strong>Explicit consent.</strong> Before anything is shared, a consent screen names exactly who is involved: <strong>Anthropic</strong> (your Claude, the recipient), <strong>Google Firebase</strong> (stores your private task mirror), and <strong>WorkOS</strong> (handles the sign-in).</li>
-  <li><strong>Only your tasks, never your photos.</strong> The mirror contains task titles, notes, projects, priority, and completion state. Photos attached to tasks are never shared.</li>
+  <li><strong>Only your tasks, never your photos.</strong> The mirror contains task titles, notes, projects (including names and colours), priority, due dates and repeat schedules, reminder timing, pinned/completion status, and any reusable task templates you create. Photos attached to tasks are never shared.</li>
   <li><strong>Disconnect</strong> stops sharing and deletes the cloud copy.</li>
   <li><strong>Delete Connected Account</strong> removes the mirror and your sign-in identity entirely.</li>
   <li><strong>Your real data is never affected.</strong> Your tasks on your device and in your private iCloud stay exactly as they are, whatever you do here.</li>
