@@ -25,7 +25,8 @@
 </head>
 <body>
 <h1>Workr — Privacy Policy</h1>
-<p class="meta"><strong>Effective date:</strong> 29 July 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> 8 October 2026 &nbsp;·&nbsp; <strong>Version:</strong> 2.7</p>
+<p class="meta"><strong>Effective date:</strong> 29 July 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> 21 November 2026 &nbsp;·&nbsp; <strong>Version:</strong> 2.8</p>
+<p class="note"><strong>Clarification in v2.8:</strong> This revision removes outdated statements that Workr collects no personal data. The processing, third-party services and optional sharing described in sections 3 and 7 still apply. This correction does not introduce a new data collection feature.</p>
 
 <div class="callout">
 <strong>What changed in v2.7 (clarification, not tracking).</strong> This update describes data that Workr's Firebase services already handle, so this Policy covers the same data types as the App Store privacy label. Firebase Analytics derives an <strong>approximate location</strong> (country, region or city level) from your device's IP address, and uses its random app-instance identifier as a <strong>device identifier</strong> for analytics. Firebase's SDKs also send <strong>other diagnostic data</strong> (for example SDK version, operating-system and network-connection type, and session timing). Workr never asks for location permission and never uses GPS or precise location. Firebase Analytics data is not linked to your identity or used to track you. You can turn off Firebase Analytics (and with it the approximate location and the analytics identifier) in <em>Settings → Privacy → Share Anonymous Analytics</em>; crash reports and SDK diagnostics are separate. See §3, §7, and §18.
@@ -52,7 +53,7 @@
 </div>
 
 <div class="callout">
-<strong>One-sentence summary.</strong> Workr stores your tasks and projects on your device and (optionally) in your own private iCloud account. The app's core collects no task content and we run no servers that hold your task data (it does send anonymous crash reports via Firebase Crashlytics to fix bugs, anonymous product-usage analytics via Firebase Analytics — no advertising identifier, no tracking — to improve the app, and — for advertising measurement — install/subscription attribution data via AppsFlyer, which uses your advertising identifier only if you grant Apple's tracking permission). Two optional features rely on third parties: Workr Premium subscriptions are managed by RevenueCat, and cloud AI — which runs only when you explicitly trigger it — sends the specific task text you choose to process to OpenAI (see §3 and §7). Your task content is never used for advertising. If your jurisdiction grants you specific rights (GDPR, CCPA/CPRA, UK GDPR, KVKK, LGPD, PIPEDA, etc.), this policy honours them.
+<strong>One-sentence summary.</strong> Workr stores your tasks and projects on your device and (optionally) in your own private iCloud account. Core task storage stays in your own device/iCloud database; optional cloud AI and connected-assistant features share task content as described below (it does send anonymous crash reports via Firebase Crashlytics to fix bugs, anonymous product-usage analytics via Firebase Analytics — no advertising identifier, no tracking — to improve the app, and — for advertising measurement — install/subscription attribution data via AppsFlyer, which uses your advertising identifier only if you grant Apple's tracking permission). Two optional features rely on third parties: Workr Premium subscriptions are managed by RevenueCat, and cloud AI — which runs only when you explicitly trigger it — sends the specific task text you choose to process to OpenAI (see §3 and §7). Your task content is never used for advertising. If your jurisdiction grants you specific rights (GDPR, CCPA/CPRA, UK GDPR, KVKK, LGPD, PIPEDA, etc.), this policy honours them.
 </div>
 
 <div class="toc">
@@ -91,7 +92,7 @@
   <li><strong>Privacy contact:</strong> <a href="mailto:apputopiacy@gmail.com">apputopiacy@gmail.com</a></li>
   <li><strong>App identifiers:</strong> Apple bundle ID <code>com.asimcanyagiz.Workr</code> · iCloud container <code>iCloud.com.asimcanyagiz.Workr</code></li>
 </ul>
-<p>Because Workr does not transmit personal data to any server we operate, we typically act as a <em>data processor of zero personal data</em>. For website visits (see §8) and any direct correspondence you send to us, we act as the data controller.</p>
+<p>We are responsible for the processing described in this Policy, including support correspondence and the app services described in sections 3 and 7. Keeping your core task database on your device or in your own iCloud does not mean that the app and its service providers collect no personal data.</p>
 
 <h2 id="scope">2. Scope of this Policy</h2>
 <p>This Policy covers:</p>
@@ -107,7 +108,7 @@
 <table>
 <thead><tr><th>Category</th><th>Collected by Workr?</th><th>Notes</th></tr></thead>
 <tbody>
-<tr><td>Contact info (name, email, phone)</td><td><strong>No</strong></td><td>No account, no sign-up flow.</td></tr>
+<tr><td>Contact info (name, email, phone)</td><td><strong>Only if you provide it for an optional service or support</strong></td><td>Core task management does not require an account. Connecting your assistant uses WorkOS sign-in and shares an email address and user ID as described in §7. Support messages may also contain contact information you choose to provide.</td></tr>
 <tr><td>Identifiers (Apple ID, Google account, device ID, IDFA, AAID)</td><td><strong>Advertising identifier (IDFA): only if you grant App Tracking Transparency</strong></td><td>For advertising measurement, AppsFlyer uses an AppsFlyer-generated device install ID plus, <strong>only if you tap "Allow" on Apple's tracking prompt</strong>, your IDFA. Tap "Ask App Not to Track" and no IDFA is used (measurement falls back to Apple SKAdNetwork). Separately, Firebase Analytics and Crashlytics use a random Firebase installation / app-instance identifier, which is not your advertising identifier and is not linked to your identity. We never request your Apple ID or Google account. See §7.</td></tr>
 <tr><td>User content (tasks, projects, notes)</td><td><strong>Stored on device only</strong></td><td>Optionally synced via your private Apple iCloud or, on Android, your private Google Drive App Folder (when that platform support ships). Never transmitted to us.</td></tr>
 <tr><td>Usage data, analytics, telemetry</td><td><strong>Yes — anonymous product analytics via Firebase Analytics, plus attribution via AppsFlyer</strong></td><td>Workr uses <strong>Firebase Analytics</strong> (the without-advertising-ID variant) to record anonymous product-usage events — screen views, feature taps, onboarding progress, and a coarse install-week cohort — tied to a random Firebase installation ID, so we can see what's used and improve the app. No IDFA, no ATT prompt, not linked to your identity, not used to track you, and no task content. Separately, AppsFlyer records app-open/install and purchase events with coarse device and network signals to attribute your install and subscription to the ad that led you here. See §7.</td></tr>
@@ -192,10 +193,10 @@
 <p>However, when you visit the site, <strong>GitHub Inc.</strong> (as the hosting provider) automatically processes standard server log information (IP address, user-agent, requested URL, timestamp) for security, abuse prevention, and operational purposes. GitHub's practices are governed by the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a> and the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a>. We do not receive these logs.</p>
 
 <h2 id="children">9. Children's privacy (COPPA / GDPR Art. 8)</h2>
-<p>Workr is rated 4+ on the App Store and is suitable for all ages, including children. Because Workr collects no personal data from any user, no special children's data is collected either. We do not knowingly collect personal data from children under the age of 13 (United States) / 16 (European Economic Area, depending on the Member State) / the equivalent local age threshold. If you are a parent or guardian and believe your child has somehow provided us with personal data (for example by emailing us), please contact <a href="mailto:apputopiacy@gmail.com">apputopiacy@gmail.com</a> and we will delete it immediately.</p>
+<p>Please consult the current age rating shown in your App Store. The data practices described in sections 3 and 7 also apply when the app is used by a child; an age rating is not a statement that no personal data is processed. We do not knowingly collect personal data from children under the applicable local age threshold without any consent required by law. If you are a parent or guardian and believe your child has provided personal data, contact <a href="mailto:apputopiacy@gmail.com">apputopiacy@gmail.com</a> so we can investigate and handle deletion as required.</p>
 
 <h2 id="international">10. International data transfers</h2>
-<p>Because we collect no personal data ourselves, no international transfer is performed by us. The cloud sync providers (Apple, optionally Google) may transfer your own data internationally in line with their own policies. Apple relies on the EU Standard Contractual Clauses for EU-to-US transfers; Google relies on the EU-US Data Privacy Framework and SCCs. We are not a party to those transfers.</p>
+<p>The providers described in section 7 may process data outside your country. This can include cloud sync, diagnostics, analytics, purchase management, attribution, support and the optional cloud features described in section 3. Consult the linked provider policies for their processing locations and transfer safeguards. Contact us if you need information about a transfer relating to your use of Workr.</p>
 
 <h2 id="security">11. Security</h2>
 <ul>
@@ -210,12 +211,12 @@
 <ul>
   <li><strong>On your device:</strong> until you delete the task / project / app.</li>
   <li><strong>In your private iCloud / Drive:</strong> until you delete the task / project, delete the app from all your devices, or terminate the cloud account. Apple and Google may retain backups according to their own retention windows.</li>
-  <li><strong>On our servers:</strong> not applicable — we operate none.</li>
+  <li><strong>App services and service providers:</strong> retention depends on the service and purpose described in sections 3 and 7. Deleting a local task or uninstalling the app does not necessarily delete diagnostic, purchase, support or optional cloud-service records; contact us to request deletion of applicable records.</li>
   <li><strong>Email correspondence:</strong> if you email us, we retain that thread for as long as needed to handle your request and for up to 24 months thereafter for support continuity, unless you ask us to delete it sooner.</li>
 </ul>
 
 <h2 id="your-rights">13. Your rights</h2>
-<p>You have the following rights with respect to any personal data you provide to us by emailing us, or that may exist about you in our records (which is typically nothing more than the email thread itself):</p>
+<p>You have the following rights, subject to applicable law, with respect to personal data processed through the services described in this Policy, including support correspondence:</p>
 <ul>
   <li><strong>Access</strong> — request a copy of any personal data we hold about you.</li>
   <li><strong>Rectification</strong> — ask us to correct inaccurate data.</li>
@@ -232,7 +233,7 @@
 <h2 id="gdpr">14. European Economic Area &amp; United Kingdom (GDPR / UK GDPR)</h2>
 <p>If you are in the EEA, the United Kingdom, or Switzerland, the following applies.</p>
 <ul>
-  <li><strong>Legal basis for processing</strong>: as we collect no personal data through the app, no Art. 6 legal basis is needed for app use. Where we do process data (email correspondence, optional crash diagnostics shared by Apple/Google), our legal basis is your <em>consent</em> (Art. 6(1)(a)) and / or our <em>legitimate interest</em> in providing customer support and improving stability (Art. 6(1)(f)).</li>
+  <li><strong>Legal basis for processing</strong>: the purposes and choices for each service are described in sections 3 and 7. We rely on consent where required, including permission-based tracking and optional sharing, and legitimate interests for customer support and improving stability where applicable. Data needed to provide a feature or purchase you request is processed to perform that service. These statements do not exempt app data from GDPR protections.</li>
   <li><strong>Automated decision-making</strong>: none. No profiling. No Art. 22 decisions.</li>
   <li><strong>Supervisory authority</strong>: you may lodge a complaint with the data protection authority of your habitual residence, place of work, or place of the alleged infringement. A directory is available at <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en">edpb.europa.eu</a>.</li>
   <li><strong>EU representative</strong>: as a non-EU-established controller that does not regularly process data of EU subjects on a large scale, we are not required to appoint an EU representative under GDPR Art. 27. We will appoint one if our processing becomes regular and material.</li>
@@ -270,16 +271,16 @@
   <li><strong>Identifiers (Device ID) for analytics</strong>: for <em>all</em> users, the random Firebase app-instance identifier that Firebase Analytics uses for <em>Analytics</em>. It is not your advertising identifier, is <strong>not linked</strong> to your identity, and is not used for tracking. (The advertising identifier is covered by the tracking bullet above and is used only with your ATT consent.) See §7.</li>
   <li><strong>Diagnostics (Other Diagnostic Data)</strong>: for <em>all</em> users, technical diagnostics sent by the Firebase SDKs (for example SDK version, operating-system and network-connection type, and session timing), for <em>App Functionality</em> and <em>Analytics</em>. <strong>Not linked</strong> to your identity and not used for tracking. See §7.</li>
 </ul>
-<p>For users who do not enable "Connect your Claude," core <em>task</em> data remains "<strong>Data Not Collected</strong>" — it never leaves your own iCloud. For all users, the app collects the anonymous <strong>Crash Data</strong>, <strong>Product Interaction</strong>, <strong>Coarse Location</strong>, analytics <strong>Device ID</strong> and <strong>Other Diagnostic Data</strong> described above and, for advertising measurement, the attribution data in the "Data Used to Track You" bullet — which uses your advertising identifier only if you grant Apple's tracking permission. If any of this changes, we will update the label and this Policy before the affected build is reviewed.</p>
+<p>Core task storage stays on your device and in your own iCloud. Optional cloud AI sends selected task text, and "Connect your Claude" shares a task mirror as described above. Diagnostics, product analytics and attribution also process the data described in sections 3 and 7, subject to their respective controls; the advertising identifier is used only with tracking permission. Local task storage must not be interpreted as a claim that Workr collects no personal data.</p>
 
 <h3>18.2 Google Play — "Data Safety" section</h3>
-<p>When Workr is distributed on Google Play, the Data Safety section will declare: <strong>no data collected</strong>, <strong>no data shared with third parties</strong>, <strong>data encrypted in transit</strong>, and (subject to platform support) <strong>users can request data deletion</strong> by deleting the app or contacting us. We will update the disclosure if any of these change.</p>
+<p>Where Workr is distributed on Google Play, the Data Safety disclosure must reflect the services and data processing in that platform's released build. The app's use of local task storage does not justify a blanket claim of no data collection or sharing. Consult the store disclosure and sections 3 and 7 for the applicable practices.</p>
 
 <h2 id="do-not-track">19. Do-Not-Track &amp; Global Privacy Control</h2>
 <p>The only cross-app tracking Workr performs is AppsFlyer advertising attribution (§7), and it is gated entirely by Apple's App Tracking Transparency prompt: decline it (or withdraw consent in iOS Settings → Privacy &amp; Security → Tracking) and no advertising identifier is used. Browser DNT / GPC signals do not apply to native app tracking, so ATT is the control that governs it. This website (§8) deploys no tracking, so DNT / GPC signals received here produce no behavioural change — there is nothing to suppress.</p>
 
 <h2 id="breach">20. Data breach notification</h2>
-<p>In the unlikely event of a personal data breach affecting any data we hold about you (typically: an unauthorised disclosure of an email thread you sent us), we will notify the relevant supervisory authority within 72 hours where required by GDPR Art. 33, and we will notify you without undue delay where required by Art. 34, by the equivalent CCPA / CPRA provisions, by KVKK madde 12/5, or by any other applicable law.</p>
+<p>In the event of a personal data breach affecting data processed through the services described in this Policy, we will notify the relevant supervisory authority within 72 hours where required by GDPR Art. 33, and we will notify you without undue delay where required by Art. 34 or other applicable law.</p>
 
 <h2 id="changes">21. Changes to this Policy</h2>
 <p>We may update this Policy from time to time. The "Last updated" and "Version" fields above will always reflect the current revision. <strong>Material changes</strong> (any change that broadens our data collection, narrows your rights, or changes the legal basis for processing) will be highlighted at the top of this document for at least 30 days and noted in the next App Store / Google Play release notes. Continued use of Workr after a material change becomes effective constitutes acceptance of the revised Policy.</p>
